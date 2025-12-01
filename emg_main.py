@@ -12,7 +12,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 
 from lr_scheduler import *
-from emg_model_with_trans_rsf import *   # contains GRU + Transformer backend
+from emg_model_with_trans_rsf_enhanced import *   # contains GRU + Transformer backend
 from emg_dataset_no_jit_rsf import *    # MFSC loader
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
